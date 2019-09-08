@@ -1,0 +1,58 @@
+//we should give our components a name with capital letter
+    //above code gets converted to the code below 
+    // return React.createElement( type,
+    //   [props],
+    //   [...children])
+//Jsx
+    //above code is jsx which will at the end will gets compiled to React.createElement calls
+
+    //1. Embedding javascript expression
+    //we can embedd any valid javascript expression inside of jsx using curly braces. For Ex
+       //const name = 'Josh Perez';
+       //const element = <h1>Hello, {name}</h1>;
+       //we have embedded name variable inside of jsx,
+
+        //In this example we embedd a function call inside of jsx
+        // function formatName(user) {
+        //   return user.firstName + ' ' + user.lastName;
+        // }
+
+        // const user = {
+        //   firstName: 'Harper',
+        //   lastName: 'Perez'
+        // };
+
+        // const element = (
+        //   <h1>
+        //     Hello, {formatName(user)}!
+        //   </h1>
+        // );
+
+      //2. jsx is an expression too 
+      //After compilation jsx call becomes regular javascript function calls and evaluate to javascript  objects.
+      //therefore we can use this in if statement and in for loops, assign it to variable and accept it as an argument
+      // function getGreeting(user) {
+      //   if (user) {
+      //     return <h1>Hello, {formatName(user)}!</h1>;
+      //   }
+      //   return <h1>Hello, Stranger.</h1>;
+      // }
+
+      //3. Jsx may contain childrean
+      // const element = (
+      //   <div>
+      //     <h1>Hello!</h1>
+      //     <h2>Good to see you here.</h2>
+      //   </div>
+      // );   
+
+
+Props::
+In react we use props to send data to components
+In react every component is treated as pure function
+In react props are equivalent to parameters of a 
+pure javascript function.
+Props are immutable. Because these are developed
+in the concept of pure functions.
+In pure functions we cannot change the data parameter
+.So also we cannot change the data of a prop in Reactjs
